@@ -75,7 +75,7 @@ public class KitchenSinkTester {
 		assertThat(result.equals("gyuaa"));
 	}
 	
-	/*@Test
+	@Test
 	public void testPartial() throws Exception {
 		boolean thrown = false;
 		String result = null;
@@ -86,5 +86,5 @@ public class KitchenSinkTester {
 		}
 		assertThat(!thrown);
 		assertThat(result.equals("gyuaa"));
-	}*/
+	}
 }

@@ -17,7 +17,7 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 		try {
 			Connection connection = getConnection();
 			PreparedStatement stmt = connection.prepareStatement(
-					"SELECT response FROM t1 where keyword like concat('%', ?, '%')");
+					"SELECT response FROM t1 where concat('%', ?, '%') like concat('%', keyword, '%')");
 			stmt.setString(1, text);
 			ResultSet rs = stmt.executeQuery();
 			rs.next();
